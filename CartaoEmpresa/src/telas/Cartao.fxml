@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartaoController">
+   <children>
+      <VBox layoutX="76.0" layoutY="75.0" prefHeight="359.0" prefWidth="250.0">
+         <children>
+            <Label text="Limite *" />
+            <TextField fx:id="carLimite" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label fx:id="carRenda" text="Renda mensal :R$ 7000000000" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Categoria *" />
+            <ChoiceBox fx:id="carCategoria" prefHeight="22.0" prefWidth="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Bandeira *" />
+            <ChoiceBox fx:id="carBandeira" prefWidth="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Variante *" />
+            <ChoiceBox fx:id="carVariante" prefWidth="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Status *" />
+            <ChoiceBox fx:id="carStatus" prefWidth="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <HBox prefHeight="23.0" prefWidth="250.0">
+               <children>
+                  <Button fx:id="crtBtnCancelar" mnemonicParsing="false" prefWidth="120.0" text="Cancelar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="crtBtnSalvar" mnemonicParsing="false" onAction="#salvar" prefWidth="120.0" text="Salvar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="401.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c3c3c3" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="carInfoAcao" layoutX="14.0" layoutY="13.0" text="Novo cartão">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="461.0" text="Outras informações do cartão serão geradas pelo sistema.">
+         <font>
+            <Font name="Arial Italic" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3c3c3" height="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label fx:id="hmeBemVindoMsg" layoutX="20.0" layoutY="15.0" text="Bem vindo,  ---- -------- !">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="sair" layoutX="506.0" layoutY="18.0" mnemonicParsing="false" onAction="#sair" prefWidth="80.0" text="Sair" />
+      <VBox layoutX="14.0" layoutY="55.0" prefHeight="295.0" prefWidth="600.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="85.0">
+         <children>
+            <Label fx:id="hmeNome" text="Nome: -----------">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="hmeCPF" text="CPF: -----------">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="hmeRenda" layoutX="10.0" layoutY="57.0" text="Renda: -----------">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="hmeLimite" layoutX="10.0" layoutY="104.0" text="Limite: -----------">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="hmeBtnEditarDados" layoutX="20.0" layoutY="296.0" mnemonicParsing="false" onAction="#editarDados" prefHeight="30.0" prefWidth="140.0" text="Editar dados pessoais" />
+      <Button fx:id="hmeBtnVisualizarCartao" layoutX="232.0" layoutY="296.0" mnemonicParsing="false" onAction="#VisualizarCartao" prefHeight="30.0" prefWidth="140.0" text="Visualizar cartao" />
+      <Button fx:id="hmeBtnVisualizarFaturas" layoutX="438.0" layoutY="296.0" mnemonicParsing="false" onAction="#visualizarFaturas" prefHeight="30.0" prefWidth="140.0" text="Visualizar faturas" />
+   </children>
+</AnchorPane>

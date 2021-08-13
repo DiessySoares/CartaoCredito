@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserEditController">
+   <children>
+      <VBox layoutX="24.0" layoutY="20.0" prefHeight="170.0" prefWidth="250.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="Telefone" />
+            <TextField fx:id="edtTelefone" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Renda mensal" />
+            <TextField fx:id="edtRenda" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Nova senha" />
+            <TextField fx:id="edtNovaSenha" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="297.0" layoutY="20.0" prefHeight="400.0" prefWidth="250.0">
+         <children>
+            <Label text="Logradouro" />
+            <TextField fx:id="edtLog" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Numero" />
+            <TextField fx:id="edtNumero" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Bairro" />
+            <TextField fx:id="edtBairro" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Cidade" />
+            <TextField fx:id="edtCidade" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Estado" />
+            <TextField fx:id="edtEstado" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Label text="Pais" />
+            <TextField fx:id="edtPais" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="72.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <HBox prefHeight="23.0" prefWidth="250.0">
+               <children>
+                  <Button fx:id="edtBtnCancelar" mnemonicParsing="false" prefWidth="120.0" text="Cancelar">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="edtBtnSalvar" mnemonicParsing="false" prefWidth="120.0" text="Salvar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8e8e8" height="52.0" layoutX="20.0" layoutY="216.0" stroke="TRANSPARENT" strokeType="INSIDE" width="250.0" />
+      <Label contentDisplay="RIGHT" layoutX="20.0" layoutY="216.0" prefHeight="52.0" prefWidth="250.0" text="dica: Se nenhuma nova senha for inserida, a antiga ainda continua valendo." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

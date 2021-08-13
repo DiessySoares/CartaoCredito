@@ -1,0 +1,13 @@
+
+DATA --- serialVersionUID
+
+CartaoCredito - 808000L
+Endereco      - 808001L
+Fatura        - 808002L
+ItemFatura    - 808003L
+Usuario       - 808004L
+
+Espaço para futuras mudanças
+
+Request       - 808010L
+Response      - 808011L

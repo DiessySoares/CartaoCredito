@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartaoController">
+   <children>
+      <Label layoutX="14.0" layoutY="34.0" text="Meus cartões ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="20.0" layoutY="96.0" prefHeight="209.0" prefWidth="760.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="96.0">
+         <children>
+            <Pane prefHeight="335.0" prefWidth="380.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="209.0" stroke="#b2b2b2" strokeType="INSIDE" width="380.0" />
+                  <VBox fx:id="carPaneFisico" prefHeight="209.0" prefWidth="380.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="380.0">
+                           <children>
+                              <Label fx:id="carNumero" text="0000.0000.0000.0000">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="carCVV" layoutX="30.0" layoutY="30.0" text="CVV: 000">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label fx:id="carDataValidade" text="Data de validade">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="carLimite" layoutX="30.0" layoutY="60.0" text="Limite:">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="carDiaVencimentoFatura" layoutX="30.0" layoutY="97.0" text="Dia de vencimento da fatura:">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="37.0" prefWidth="380.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="190.0">
+                                 <children>
+                                    <Label fx:id="carCategoria" text="Categoria">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="carVariante" layoutX="30.0" layoutY="10.0" text="Variante">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="190.0">
+                                 <children>
+                                    <Label fx:id="carBandeira" text="Bandeira">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="carStatus" layoutX="30.0" layoutY="10.0" text="Status">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="carPaneVirtual" disable="true" layoutX="10.0" layoutY="10.0" prefHeight="335.0" prefWidth="380.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="209.0" stroke="#b2b2b2" strokeType="INSIDE" width="380.0" />
+                  <VBox prefHeight="209.0" prefWidth="380.0">
+                     <children>
+                        <HBox prefHeight="42.0" prefWidth="380.0">
+                           <children>
+                              <Label fx:id="carNumeroVirtual" text="0000.0000.0000.0000">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="carCVVVirtual" layoutX="30.0" layoutY="30.0" text="CVV: 000">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label fx:id="carDataValidadeVirtual" text="Data de validade">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="carStatusVirtual" text="Status">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Cartao virtual" textFill="#0067ff">
+                           <VBox.margin>
+                              <Insets left="300.0" top="80.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Button layoutX="20.0" layoutY="318.0" mnemonicParsing="false" onAction="#editarCartao" prefHeight="30.0" prefWidth="180.0" text="Editar informações do cartão" />
+      <Button fx:id="carHandleFisico" layoutX="311.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleCartaoFisico" prefHeight="30.0" prefWidth="89.0" text="Bloquear" />
+      <Button fx:id="carHandleVirtual" disable="true" layoutX="691.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleCartaoVirtual" prefHeight="30.0" prefWidth="89.0" text="Bloquear" />
+      <Button fx:id="carCriarVirtual" disable="true" layoutX="522.0" layoutY="321.0" mnemonicParsing="false" onAction="#criarCartaoVirtual" opacity="0.0" prefHeight="25.0" prefWidth="125.0" text="Criar cartao virtual" textAlignment="CENTER" AnchorPane.bottomAnchor="120.0" />
+   </children>
+</AnchorPane>
